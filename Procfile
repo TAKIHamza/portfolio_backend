@@ -1,2 +1,2 @@
-web: python manage.py migrate && gunicorn portfolio_backend.wsgi
+web: python manage.py migrate && gunicorn portfolio_backend.wsgi:application
 
