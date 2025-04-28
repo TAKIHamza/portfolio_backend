@@ -1,1 +1,1 @@
-web: cd /app && export PYTHONPATH=/app && python -c "from portfolio_backend.wsgi import application" && python manage.py migrate && gunicorn portfolio_backend.wsgi:application --bind 0.0.0.0:$PORT
+web: gunicorn portfolio_backend.wsgi --log-file -
