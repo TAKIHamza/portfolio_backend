@@ -1,2 +1,1 @@
-web: python manage.py migrate && gunicorn portfolio_backend.wsgi:application
-
+web: python manage.py migrate && gunicorn portfolio_backend.wsgi --workers=2 --bind=0.0.0.0:$PORT
