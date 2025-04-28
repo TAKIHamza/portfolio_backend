@@ -13,7 +13,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 # Security settings
 SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-development-key-here')
 DEBUG = False
-ALLOWED_HOSTS = ['.onrender.com', 'localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 CSRF_TRUSTED_ORIGINS = os.getenv('CSRF_TRUSTED_ORIGINS', 'http://localhost').split(',')
 
